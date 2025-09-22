@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ooota — Zero Commission Food Delivery</title>
+  <style>
+    /* ======================
+       Ooota — Single-file CSS
+       Mobile-first, responsive, professional layout
+       ====================== */
+    :root{
+      --bg: #f7faf9;
+      --card: #ffffff;
+      --accent: #136b3a;
+      --muted: #6b7280;
+      --max-w: 1120px;
+      --radius: 12px;
+      --shadow: 0 6px 18px rgba(16,24,40,0.08);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: Inter, 'Segoe UI', Roboto, system-ui, -apple-system, Arial, sans-serif;
+      background:var(--bg);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.5;
+    }
+
+    /* Container */
+    .wrap{
+      width:100%;
+      max-width:var(--max-w);
+      margin:0 auto;
+      padding:20px;
+    }
+
+    /* Header */
+    .site-header{
+      background:transparent;
+      padding:14px 0;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .logo{
+      width:48px;
+      height:48px;
+      border-radius:10px;
+      background:linear-gradient(135deg,#1e7b3a,#16a34a 65%);
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      color:white;
+      font-weight:700;
+      font-size:20px;
+      box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+    }
+    .brand .title{
+      font-size:18px;
+      font-weight:700;
+      color:var(--accent);
+      letter-spacing:0.2px;
+    }
+    .brand .tag{
+      font-size:12px;
+      color:var(--muted);
+    }
+
+    .header-actions{
+      display:flex;
+      align-items:center;
+      gap:12px;
+    }
+    .socials{display:flex; gap:10px; align-items:center}
+    .socials a img{width:26px; height:26px; display:block; border-radius:6px; opacity:0.95}
+    .app-links-top{display:flex; gap:8px}
+    .app-links-top a{padding:8px 12px; border-radius:10px; background:white; box-shadow:var(--shadow); font-weight:600; font-size:13px; color:var(--accent)}
+
+    /* Hero */
+    .hero{
+      margin-top:6px;
+      background:linear-gradient(180deg, rgba(255,255,255,0.9), rgba(255,255,255,0.9));
+      padding:28px;
+      border-radius:16px;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      align-items:stretch;
+    }
+    .hero-inner{display:flex; flex-direction:column; gap:18px; align-items:center; text-align:center}
+    .eyebrow{font-size:13px; font-weight:700; color:var(--accent); letter-spacing:0.6px}
+    h1{margin:0; font-size:22px; color:#064e2d; line-height:1.08}
+    p.lead{margin:0; color:var(--muted); max-width:720px; font-size:15px}
+
+    .hero-ctas{display:flex; gap:12px; flex-direction:column; width:100%; margin-top:6px; align-items:center}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 18px; border-radius:10px; font-weight:700; font-size:14px; cursor:pointer; text-decoration:none}
+    .btn-primary{background:var(--accent); color:white; box-shadow: 0 8px 22px rgba(20,83,45,0.12)}
+    .btn-outline{background:white; border:1px solid #e6e9ee; color:#0f172a;}
+
+    /* Desktop layout */
+    @media(min-width:900px){
+      .hero{flex-direction:row; align-items:center; gap:26px; padding:34px}
+      .hero-inner{flex:1; align-items:flex-start; text-align:left}
+      h1{font-size:36px}
+      .hero-ctas{flex-direction:row; align-items:center}
+    }
+
+    /* Feature / About */
+    .features{margin-top:18px; display:grid; gap:18px}
+    .card{background:var(--card); border-radius:12px; padding:18px; box-shadow:var(--shadow)}
+    .about-grid{display:grid; gap:18px}
+    @media(min-width:900px){ .about-grid{grid-template-columns:1fr 360px; align-items:center} }
+
+    .list{padding-left:16px; margin-top:8px}
+    .list li{margin:10px 0; color:var(--muted); font-size:15px}
+
+    /* Vision / Mission side-by-side */
+    .cards-row{display:grid; gap:14px; margin-top:18px}
+    @media(min-width:900px){ .cards-row{grid-template-columns:1fr 1fr} }
+
+    .card h3{margin:0; color:var(--accent); font-size:18px}
+    .card p{margin:10px 0 0; color:var(--muted); font-size:14px}
+
+    /* App promo cards */
+    .apps-row{display:grid; gap:14px; margin-top:18px}
+    @media(min-width:700px){ .apps-row{grid-template-columns:1fr 1fr} }
+    .app-card{display:flex; gap:12px; align-items:center; padding:16px; border-radius:12px; background:linear-gradient(180deg,#fff,#fbfffb); box-shadow:var(--shadow)}
+    .app-card img.mock{width:88px; height:60px; object-fit:cover; border-radius:8px; border:1px solid #eef4ea}
+    .badges{display:flex; gap:8px; flex-wrap:wrap}
+
+    /* Contact */
+    .contact{margin-top:18px; display:flex; gap:18px; flex-direction:column}
+    @media(min-width:900px){ .contact{flex-direction:row; align-items:center; justify-content:space-between} }
+    .contact .info{flex:1}
+    .contact .info p{margin:4px 0; color:var(--muted)}
+
+    /* Footer */
+    .site-footer{margin-top:30px; padding:22px; border-radius:12px; background:#0b1220; color:#cbd5e1; display:flex; flex-direction:column; gap:12px}
+    .footer-row{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
+    .footer-links a{color:#9aa8b6; margin-left:12px; text-decoration:none; font-size:14px}
+
+    /* small adjustments */
+    .muted{color:var(--muted); font-size:14px}
+    .small{font-size:13px; color:#94a3b8}
+    /* Mobile-specific adjustments */
+@media (max-width: 768px) {
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .header-actions {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 14px;
+  }
+
+  .app-links-top {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+  }
+  .app-links-top a {
+    flex: 1;
+    text-align: center;
+  }
+
+  .socials {
+    justify-content: center; 
+    width: 100%;
+    gap: 20px;
+  }
+  .socials a img {
+    width: 32px;  
+    height: 32px;
+  }
+}
+
+
+  </style>
+</head>
+<body>
+
+  <div class="wrap" role="main">
+    <!-- Header -->
+    <header class="site-header" role="banner" aria-label="Site header">
+      <div class="brand" aria-hidden="false">
+        <div class="logo" aria-hidden="true">O</div>
+        <div>
+          <div class="title">Ooota</div>
+          <div class="tag small">Zero commission · Local-first</div>
+        </div>
+      </div>
+
+      <div class="header-actions" aria-hidden="false">
+        <nav class="app-links-top" aria-label="Quick links">
+          <a href="#restaurant-app" class="small">Restaurant app</a>
+          <a href="#user-app" class="small">User app</a>
+        </nav>
+        <div class="socials" aria-label="Social links">
+          <a href="#" title="Facebook"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#" title="WhatsApp"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+          <a href="#" title="Instagram"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-inner">
+        <div class="eyebrow">Good food. Fair platform.</div>
+        <h1 id="hero-heading">Delivering restaurant prices to your doorstep — zero commission, zero surprises.</h1>
+        <p class="lead">Ooota is a community-driven delivery platform that removes commission burdens from restaurants and hidden fees from customers. We make food affordable, authentic, and fair.</p>
+        <div class="hero-ctas" role="group" aria-label="Primary actions">
+          <a class="btn btn-primary" href="#user-app">Order as Customer</a>
+          <a class="btn btn-outline" href="#restaurant-app">Join as Restaurant</a>
+        </div>
+      </div>
+
+      <!-- mock visual on the right (shows on desktop) -->
+      <div style="display:none" class="hero-visual" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?q=80&w=800&auto=format&fit=crop" alt="Delicious food" style="width:420px; max-width:100%; border-radius:12px; box-shadow:var(--shadow)">
+      </div>
+    </section>
+
+    <!-- About + Quick features -->
+    <section class="features">
+      <div class="about-grid card">
+        <div>
+          <h2 style="margin-top:0; color:var(--accent);">About Ooota</h2>
+          <p class="muted">We believe good food should reach people without extra burden. Unlike traditional platforms, Ooota follows a zero commission model designed to help local restaurants grow while customers enjoy authentic food at fair prices.</p>
+          <ul class="list">
+            <li><strong>For Customers:</strong> Same restaurant prices, delivered. No hidden fees.</li>
+            <li><strong>For Restaurants:</strong> Grow volume without losing margins to high commissions.</li>
+            <li><strong>Community:</strong> Local restaurants thrive, customers save, and food stays authentic.</li>
+          </ul>
+        </div>
+
+        <aside style="min-width:250px; display:flex; flex-direction:column; gap:12px;">
+          <div class="card" style="padding:12px">
+            <div style="font-weight:700; color:var(--accent)">Contact</div>
+            <div class="small" style="margin-top:6px";>Sapthami Business Solutions LLP</div>
+            <div class="small">Phone: <a href="tel:+919141071971" style="color:#677269; text-decoration:none">9141071971</a></div>
+          </div>
+
+          <div class="card" style="padding:12px; display:flex; flex-direction:column; gap:8px; align-items:flex-start">
+            <div style="font-weight:700; color:var(--accent)">Why Ooota?</div>
+            <div class="muted">Transparent pricing • Fair for merchants • Simple UX</div>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Vision & Mission -->
+      <div class="cards-row">
+        <div class="card">
+          <h3>Vision</h3>
+          <p>To become India’s most trusted, zero-commission food delivery platform, empowering local eateries and creating value for every customer.</p>
+        </div>
+        <div class="card">
+          <h3>Mission</h3>
+          <p>To revolutionize the food delivery industry with fairness, transparency, and trust, ensuring both customers and restaurants benefit equally.</p>
+        </div>
+      </div>
+
+      <!-- App promo -->
+      <div class="apps-row">
+        <div class="app-card">
+          <img class="mock" src="https://images.unsplash.com/photo-1604908177522-0e7bb6a1c0c1?q=80&w=600&auto=format&fit=crop" alt="App preview">
+          <div style="flex:1">
+            <div style="font-weight:700; color:var(--accent)">Restaurant Partner App</div>
+            <div class="muted" style="margin-top:6px">Manage orders, menus, and deliveries — without commission fees.</div>
+            <div class="badges" style="margin-top:10px">
+              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play badge" style="height:42px"></a>
+              <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store badge" style="height:42px"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="app-card">
+          <img class="mock" src="https://images.unsplash.com/photo-1546069901-eacef0df6022?q=80&w=600&auto=format&fit=crop" alt="App preview">
+          <div style="flex:1">
+            <div style="font-weight:700; color:var(--accent)">User App</div>
+            <div class="muted" style="margin-top:6px">Order your favorite food at restaurant prices, delivered to your doorstep.</div>
+            <div class="badges" style="margin-top:10px">
+              <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Google Play badge" style="height:42px"></a>
+              <a href="#"><img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="App Store badge" style="height:42px"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <section class="contact">
+      <div class="card info">
+        <h3 style="margin-top:0; color:var(--accent)">Get in touch</h3>
+        <p class="muted">For partnerships, support or media — reach out.</p>
+        <p style="margin-top:8px"><strong>Sapthami Business Solutions LLP</strong></p>
+        <p class="small">Phone: <a href="tel:+919141071971" style="color:#677269; text-decoration:none">9141071971</a></p>
+      </div>
+
+      <div class="card" style="min-width:240px; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; gap:8px">
+        <div class="small" style="font-weight:700; color:var(--accent)">Stay connected</div>
+        <div class="socials">
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"></a>
+          <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="footer-row">
+        <div>© <strong>Ooota</strong> — Sapthami Business Solutions LLP · 2025</div>
+        <div class="footer-links">
+          <a href="#">Terms &amp; Conditions</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+      <div class="small">Made for local restaurants. No commission. Transparent pricing.</div>
+    </footer>
+  </div>
+
+</body>
+</html>
