@@ -1,504 +1,611 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ooota — Legal Policies</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --primary:#ff6b35;
-      --secondary:#ff9f80;
-      --dark:#222;
-      --light:#fff;
-      --muted:#666;
-    }
-    *{margin:0;padding:0;box-sizing:border-box}
-    body{
-      font-family:'Open Sans',sans-serif;
-      color:var(--dark);
-      background:var(--light);
-      padding: 40px 0;
-    }
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-    header {
-      text-align: center;
-      margin-bottom: 40px;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 20px;
-    }
-    .logo {
-      font-family:'Playfair Display',serif;
-      font-size:32px;
-      font-weight:700;
-      color:var(--primary);
-      text-decoration: none;
-      display: block;
-      margin-bottom: 10px;
-    }
-    .section-nav {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 15px;
-        margin-bottom: 30px;
-    }
-    .section-nav a {
-        padding: 8px 15px;
-        border: 1px solid var(--primary);
-        border-radius: 6px;
-        text-decoration: none;
-        color: var(--primary);
-        font-weight: 600;
-        transition: background-color 0.2s, color 0.2s;
-    }
-    .section-nav a:hover {
-        background-color: var(--primary);
-        color: var(--light);
-    }
-    h1 {
-      font-family:'Playfair Display',serif;
-      font-size:34px;
-      margin-top: 40px;
-      color:var(--dark);
-    }
-    h2 {
-      font-family:'Playfair Display',serif;
-      font-size:28px;
-      margin-top: 40px;
-      margin-bottom: 15px;
-      color: var(--primary);
-    }
-    h3 {
-      font-size: 20px;
-      margin-top: 25px;
-      margin-bottom: 10px;
-      color: var(--dark);
-    }
-    p, li {
-      color:var(--muted);
-      line-height:1.7;
-      font-size:16px;
-      margin-bottom: 10px;
-    }
-    ul, ol {
-      margin-left: 20px;
-      padding-left: 0;
-      margin-bottom: 20px;
-    }
-    ol li {
-        margin-bottom: 5px;
-    }
-    .contact-info strong {
-        color: var(--dark);
-    }
-    footer {
-      text-align: center;
-      margin-top: 60px;
-      padding-top: 20px;
-      border-top: 1px solid #eee;
-      color: var(--muted);
-      font-size: 14px;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ooota — Legal Policies</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary: #ff6b35;
+            --secondary: #ff9f80;
+            --dark: #222;
+            --light: #fff;
+            --muted: #666;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: var(--dark);
+            background: var(--light);
+            padding: 40px 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            text-align: center;
+            /* margin-bottom: 20px; */
+            border-bottom: 1px solid #eee;
+            padding-bottom: 20px;
+        }
+
+        /* --- START NEW LOGO STYLES --- */
+        .logo-link {
+            text-decoration: none;
+            display: inline-block;
+            /* Changed from block to inline-block for centering */
+            margin-bottom: 0px;
+        }
+
+        .logo-img {
+            height: 120px;
+            /* Set the height of your logo */
+            width: auto;
+            display: block;
+        }
+
+        /* Removed old .logo text styles */
+        /* --- END NEW LOGO STYLES --- */
+
+        .section-nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .section-nav a {
+            padding: 8px 15px;
+            border: 1px solid var(--primary);
+            border-radius: 6px;
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .section-nav a:hover {
+            background-color: var(--primary);
+            color: var(--light);
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            /* margin-top: 40px; */
+            color: var(--dark);
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 28px;
+            margin-top: 40px;
+            margin-bottom: 15px;
+            color: var(--primary);
+        }
+
+        h3 {
+            font-size: 20px;
+            margin-top: 25px;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        p,
+        li {
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+            padding-left: 0;
+            margin-bottom: 20px;
+        }
+
+        ol li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info strong {
+            color: var(--dark);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            color: var(--muted);
+            font-size: 14px;
+        }
+    </style>
 </head>
+
 <body>
 
-  <div class="container">
-    <header>
-      <a href="index.html" class="logo">Ooota</a>
-      <h1>Legal Policies</h1>
-    </header>
+    <div class="container">
+        <header>
+            <a href="index.html" class="logo-link">
+                <img src="Logo.png" alt="Ooota Logo" class="logo-img">
+            </a>
+            <h1>Legal Policies</h1>
+        </header>
 
-    <nav class="section-nav">
-        <a href="#tos">Terms of Service</a>
-        <a href="#pp">Privacy Policy</a>
-        <a href="#rpt">Restaurant Partner Terms</a>
-    </nav>
-    
-    <main>
-      
-      <section id="tos">
-        <h1>Ooota Terms of Service</h1>
-        <!-- <p><strong>Last Updated:</strong> [Insert Date]</p>
-        <p><strong>Effective Date:</strong> [Insert Date]</p> -->
-        <p>Welcome to Ooota – your go-to food delivery platform connecting hungry customers with trusted restaurants and reliable delivery partners. These Terms of Service (“Terms”) govern your access to and use of the Ooota app, website, and related services (collectively, “Platform”). By using the Platform, you agree to be bound by these Terms. If you do not agree, please do not use the Platform.</p>
+        <nav class="section-nav">
+            <a href="#tos">Terms of Service</a>
+            <a href="#pp">Privacy Policy</a>
+            <a href="#rpt">Restaurant Partner Terms</a>
+        </nav>
 
-        <h2>1. DEFINITIONS</h2>
-        <ul>
-          <li><strong>User:</strong> Any person who accesses or uses the Platform, including customers, restaurant partners, and delivery partners.</li>
-          <li><strong>Customer:</strong> A user placing a food order through Ooota.</li>
-          <li><strong>Restaurant Partner:</strong> A third-party entity offering food and beverage services through Ooota.</li>
-          <li><strong>Delivery Partner:</strong> A third-party service provider responsible for delivering food orders.</li>
-          <li><strong>“We”, “Our”, “Ours”, “Ootaa”:</strong> Refers to Ooota Technologies Private Limited.</li>
-        </ul>
+        <main>
 
-        <h2>2. Account Registration & Security</h2>
-        <h3>2.1 Eligibility</h3>
-        <p>To use the Ooota platform, you must:</p>
-        <ul>
-          <li>Be a natural person of at least 18 years of age or a legally registered business entity.</li>
-          <li>Have the legal capacity to enter into binding contracts under applicable law.</li>
-        </ul>
-        <h3>2.2 User Account Creation</h3>
-        <ul>
-          <li>To access certain services, you must create an account with accurate, current, and complete information, including your name, mobile number, email address, and delivery address.</li>
-          <li>You agree to keep your information updated at all times and are solely responsible for maintaining the confidentiality and security of your account.</li>
-          <li>You may be required to verify your mobile number or email via OTP or link verification.</li>
-          <li>You are responsible for all activities that occur under your account, including unauthorized access resulting from failure to maintain your credentials.</li>
-        </ul>
-        <h3>2.3 Business Accounts (Restaurants & Delivery Partners)</h3>
-        <ul>
-          <li>Restaurants and delivery partners must provide additional verification documents, including but not limited to PAN, GST, FSSAI license (restaurants), identity proof, address proof, driving license (delivery partners), and bank account details.</li>
-          <li>Businesses are responsible for updating and maintaining the accuracy of all business-related details.</li>
-          <li>Ooota reserves the right to approve, reject, or terminate business accounts at its sole discretion.</li>
-        </ul>
-        <h3>2.4 Account Suspension or Termination</h3>
-        <p>Ooota may suspend or permanently disable your account if:</p>
-        <ul>
-          <li>You violate the Terms of Service or applicable law.</li>
-          <li>You engage in fraudulent, illegal, or abusive activity.</li>
-          <li>You provide false or misleading information.</li>
-          <li>You initiate unjustified chargebacks or harass restaurants/delivery personnel.</li>
-        </ul>
-        <p>You may request to delete your account by contacting support. However, some data may be retained for legal or compliance reasons as described in our Privacy Policy.</p>
+            <section id="tos">
+                <h1>Ooota Terms of Service</h1>
+                <p>Welcome to Ooota – your go-to food delivery platform connecting hungry customers with trusted
+                    restaurants and reliable delivery partners. These Terms of Service (“Terms”) govern your access to
+                    and use of the Ooota app, website, and related services (collectively, “Platform”). By using the
+                    Platform, you agree to be bound by these Terms. If you do not agree, please do not use the Platform.
+                </p>
 
-        <h2>3. Platform Services</h2>
-        <h3>3.1 Nature of Services</h3>
-        <p>Ooota provides a technology platform that enables:</p>
-        <ul>
-          <li>Customers to discover and place orders with independent restaurants and food providers.</li>
-          <li>Restaurants to list their menus, receive and fulfill customer orders.</li>
-          <li>Delivery partners to accept and deliver food orders.</li>
-        </ul>
-        <p>Ooota is a facilitator and not a food manufacturer, retailer, or delivery provider. The contracts for sale and delivery are directly between customers, restaurants, and delivery partners.</p>
-        <h3>3.2 Platform Features</h3>
-        <p>Through the Ooota platform (website and mobile app), you may:</p>
-        <ul>
-          <li>Browse restaurant listings by cuisine, rating, or location.</li>
-          <li>Place orders and make online payments.</li>
-          <li>Track order status and delivery partner location in real-time.</li>
-          <li>Rate and review orders and delivery experience.</li>
-          <li>Avail discounts, subscriptions, and promotional campaigns.</li>
-        </ul>
-        <h3>3.3 Service Limitations</h3>
-        <ul>
-          <li>Ooota does not guarantee continuous or error-free access to the platform.</li>
-          <li>Some services may be unavailable in certain geographic areas.</li>
-          <li>Features may vary by account type, user activity, or promotional campaigns.</li>
-          <li>Ooota reserves the right to modify, suspend, or discontinue any part of the service at any time.</li>
-        </ul>
+                <h2>1. DEFINITIONS</h2>
+                <ul>
+                    <li>**User:** Any person who accesses or uses the Platform, including customers, restaurant
+                        partners, and delivery partners.</li>
+                    <li>**Customer:** A user placing a food order through Ooota.</li>
+                    <li>**Restaurant Partner:** A third-party entity offering food and beverage services through Ooota.
+                    </li>
+                    <li>**Delivery Partner:** A third-party service provider responsible for delivering food orders.
+                    </li>
+                    <li>**“We”, “Our”, “Ours”, “Ootaa”:** Refers to Ooota Technologies Private Limited.</li>
+                </ul>
 
-        <h2>4. PLATFORM SERVICES</h2>
-        <p>Ooota is a facilitator that connects Customers with Restaurant and Delivery Partners. We do not:</p>
-        <ul>
-          <li>Own, prepare, or sell food products.</li>
-          <li>Employ delivery partners.</li>
-          <li>Guarantee quality, safety, or legality of any food or delivery.</li>
-        </ul>
+                <h2>2. Account Registration & Security</h2>
+                <h3>2.1 Eligibility</h3>
+                <p>To use the Ooota platform, you must:</p>
+                <ul>
+                    <li>Be a natural person of at least 18 years of age or a legally registered business entity.</li>
+                    <li>Have the legal capacity to enter into binding contracts under applicable law.</li>
+                </ul>
+                <h3>2.2 User Account Creation</h3>
+                <ul>
+                    <li>To access certain services, you must create an account with accurate, current, and complete
+                        information, including your name, mobile number, email address, and delivery address.</li>
+                    <li>You agree to keep your information updated at all times and are solely responsible for
+                        maintaining the confidentiality and security of your account.</li>
+                    <li>You may be required to verify your mobile number or email via OTP or link verification.</li>
+                    <li>You are responsible for all activities that occur under your account, including unauthorized
+                        access resulting from failure to maintain your credentials.</li>
+                </ul>
+                <h3>2.3 Business Accounts (Restaurants & Delivery Partners)</h3>
+                <ul>
+                    <li>Restaurants and delivery partners must provide additional verification documents, including but
+                        not limited to PAN, GST, FSSAI license (restaurants), identity proof, address proof, driving
+                        license (delivery partners), and bank account details.</li>
+                    <li>Businesses are responsible for updating and maintaining the accuracy of all business-related
+                        details.</li>
+                    <li>Ooota reserves the right to approve, reject, or terminate business accounts at its sole
+                        discretion.</li>
+                </ul>
+                <h3>2.4 Account Suspension or Termination</h3>
+                <p>Ooota may suspend or permanently disable your account if:</p>
+                <ul>
+                    <li>You violate the Terms of Service or applicable law.</li>
+                    <li>You engage in fraudulent, illegal, or abusive activity.</li>
+                    <li>You provide false or misleading information.</li>
+                    <li>You initiate unjustified chargebacks or harass restaurants/delivery personnel.</li>
+                </ul>
+                <p>You may request to delete your account by contacting support. However, some data may be retained for
+                    legal or compliance reasons as described in our Privacy Policy.</p>
 
-        <h2>5. ORDER PLACEMENT, PAYMENTS & CANCELLATIONS</h2>
-        <h3>5.1 Order Flow</h3>
-        <ul>
-          <li>Customers can browse menus, select items, place orders, and make payments.</li>
-          <li>Restaurant Partners may accept or reject orders (e.g., due to unavailability).</li>
-        </ul>
-        <h3>5.2 Pricing & Payment</h3>
-        <ul>
-          <li>Prices are set by the restaurants and must match in-store pricing.</li>
-          <li>Applicable taxes, delivery charges, and service fees are transparently shown before payment.</li>
-          <li>Accepted modes: UPI, credit/debit cards, net banking, mobile wallets.</li>
-        </ul>
-        <h3>5.3 No Cancellation Policy</h3>
-        <ul>
-          <li>Once placed and paid, orders cannot be canceled.</li>
-          <li>Refunds only at the Restaurant Partner’s discretion (e.g., wrong or unavailable items).</li>
-        </ul>
-        <h3>5.4 Failed Transactions</h3>
-        <ul>
-          <li>Orders will not be processed for failed payments.</li>
-          <li>Chargebacks, fraud, or misuse may lead to account suspension.</li>
-        </ul>
+                <h2>3. Platform Services</h2>
+                <h3>3.1 Nature of Services</h3>
+                <p>Ooota provides a technology platform that enables:</p>
+                <ul>
+                    <li>Customers to discover and place orders with independent restaurants and food providers.</li>
+                    <li>Restaurants to list their menus, receive and fulfill customer orders.</li>
+                    <li>Delivery partners to accept and deliver food orders.</li>
+                </ul>
+                <p>Ooota is a **facilitator** and not a food manufacturer, retailer, or delivery provider. The contracts
+                    for sale and delivery are directly between customers, restaurants, and delivery partners.</p>
+                <h3>3.2 Platform Features</h3>
+                <p>Through the Ooota platform (website and mobile app), you may:</p>
+                <ul>
+                    <li>Browse restaurant listings by cuisine, rating, or location.</li>
+                    <li>Place orders and make online payments.</li>
+                    <li>Track order status and delivery partner location in real-time.</li>
+                    <li>Rate and review orders and delivery experience.</li>
+                    <li>Avail discounts, subscriptions, and promotional campaigns.</li>
+                </ul>
+                <h3>3.3 Service Limitations</h3>
+                <ul>
+                    <li>Ooota does not guarantee continuous or error-free access to the platform.</li>
+                    <li>Some services may be unavailable in certain geographic areas.</li>
+                    <li>Features may vary by account type, user activity, or promotional campaigns.</li>
+                    <li>Ooota reserves the right to modify, suspend, or discontinue any part of the service at any time.
+                    </li>
+                </ul>
 
-        <h2>6. RESTAURANT PARTNER OBLIGATIONS</h2>
-        <ul>
-          <li>Must comply with applicable laws and regulations including the Food Safety and Standards Act, FSSAI guidelines, and the Consumer Protection Act.</li>
-          <li>Display FSSAI license on the Ooota platform.</li>
-          <li>Maintain accurate and up-to-date menu listings including prices, availability, descriptions, and allergen disclosures.</li>
-          <li>Ensure timely order acceptance or rejection. In case of rejection or unavailability, promptly inform the customer and suggest alternatives or issue refunds.</li>
-          <li>Prepare and pack food with proper hygiene and packaging standards.</li>
-          <li>Resolve customer complaints related to food quality, spillage, missing items, or incorrect orders. This includes:
-            <ol type="i">
-              <li>Investigating complaints promptly and communicating clearly with the affected customer.</li>
-              <li>Offering appropriate remedies such as replacement, refund, or goodwill credit wherever applicable.</li>
-              <li>Coordinating with delivery partners and Ooota support if the issue is delivery related.</li>
-              <li>Updating internal processes to prevent recurrence of common issues.</li>
-            </ol>
-          </li>
-        </ul>
+                <h2>4. PLATFORM SERVICES</h2>
+                <p>Ooota is a facilitator that connects Customers with Restaurant and Delivery Partners. We do not:</p>
+                <ul>
+                    <li>Own, prepare, or sell food products.</li>
+                    <li>Employ delivery partners.</li>
+                    <li>Guarantee quality, safety, or legality of any food or delivery.</li>
+                </ul>
 
-        <h2>7. DELIVERY PARTNER OBLIGATIONS</h2>
-        <ul>
-          <li>Must provide and verify identity proof, address proof, valid driving license, and bank details.</li>
-          <li>Adhere to road safety rules and regulations, and conduct deliveries with punctuality and professionalism.</li>
-          <li>Accept delivery requests only when available and ensure order pickup and delivery within the estimated time.</li>
-          <li>Maintain hygiene and cleanliness while handling food.</li>
-          <li>Communicate politely with customers and restaurant staff.</li>
-          <li>Report incidents or undeliverable orders to the support team immediately.</li>
-          <li>Not engage in fraudulent behavior, manipulation of delivery status, or use of abusive language.</li>
-          <li>Possession or use of alcohol, drugs, or weapons during deliveries will result in immediate termination and legal consequences.</li>
-        </ul>
+                <h2>5. ORDER PLACEMENT, PAYMENTS & CANCELLATIONS</h2>
+                <h3>5.1 Order Flow</h3>
+                <ul>
+                    <li>Customers can browse menus, select items, place orders, and make payments.</li>
+                    <li>Restaurant Partners may accept or reject orders (e.g., due to unavailability).</li>
+                </ul>
+                <h3>5.2 Pricing & Payment</h3>
+                <ul>
+                    <li>Prices are set by the restaurants and must match in-store pricing.</li>
+                    <li>Applicable taxes, delivery charges, and service fees are transparently shown before payment.
+                    </li>
+                    <li>Accepted modes: UPI, credit/debit cards, net banking, mobile wallets.</li>
+                </ul>
+                <h3>5.3 No Cancellation Policy</h3>
+                <ul>
+                    <li>**Once placed and paid, orders cannot be canceled.**</li>
+                    <li>Refunds only at the Restaurant Partner’s discretion (e.g., wrong or unavailable items).</li>
+                </ul>
+                <h3>5.4 Failed Transactions</h3>
+                <ul>
+                    <li>Orders will not be processed for failed payments.</li>
+                    <li>Chargebacks, fraud, or misuse may lead to account suspension.</li>
+                </ul>
 
-        <h2>8. DELIVERY & SERVICE LIMITATIONS</h2>
-        <ul>
-          <li>Estimated delivery times are indicative. Delays may occur due to traffic, weather, or operational issues.</li>
-          <li>Ooota is not liable for:
-            <ul>
-              <li>Delays caused by delivery partners.</li>
-              <li>Food issues after pick-up (e.g., spillage, tampering).</li>
-              <li>Incorrect/missing items (to be resolved with the restaurant).</li>
-            </ul>
-          </li>
-        </ul>
+                <h2>6. RESTAURANT PARTNER OBLIGATIONS</h2>
+                <ul>
+                    <li>Must comply with applicable laws and regulations including the Food Safety and Standards Act,
+                        FSSAI guidelines, and the Consumer Protection Act.</li>
+                    <li>Display FSSAI license on the Ooota platform.</li>
+                    <li>Maintain accurate and up-to-date menu listings including prices, availability, descriptions, and
+                        allergen disclosures.</li>
+                    <li>Ensure timely order acceptance or rejection. In case of rejection or unavailability, promptly
+                        inform the customer and suggest alternatives or issue refunds.</li>
+                    <li>Prepare and pack food with proper hygiene and packaging standards.</li>
+                    <li>Resolve customer complaints related to food quality, spillage, missing items, or incorrect
+                        orders. This includes:
+                        <ol type="i">
+                            <li>Investigating complaints promptly and communicating clearly with the affected customer.
+                            </li>
+                            <li>Offering appropriate remedies such as replacement, refund, or goodwill credit wherever
+                                applicable.</li>
+                            <li>Coordinating with delivery partners and Ooota support if the issue is delivery related.
+                            </li>
+                            <li>Updating internal processes to prevent recurrence of common issues.</li>
+                        </ol>
+                    </li>
+                </ul>
 
-        <h2>9. REFUNDS & COMPENSATION</h2>
-        <h3>9.1 Eligible Refunds</h3>
-        <p>Refunds are applicable in cases such as:</p>
-        <ul>
-          <li>Incorrect, missing, or incomplete items in the order.</li>
-          <li>Spoiled, unsafe, or unfit food (verified and acknowledged by the restaurant partner).</li>
-        </ul>
-        <h3>9.2 Ineligible Refunds</h3>
-        <p>Refunds will not be issued for:</p>
-        <ul>
-          <li>Delays in delivery due to traffic, weather, or operational reasons.</li>
-          <li>Change of mind after placing the order.</li>
-          <li>Taste preferences, portion size dissatisfaction, or subjective complaints.</li>
-        </ul>
-        <h3>9.3 Refund Authorization</h3>
-        <ul>
-          <li>Ooota acts solely as a facilitator and does not independently process or authorize refunds.</li>
-          <li>All refund approvals are subject to confirmation from the respective restaurant partner based on their evaluation.</li>
-          <li>In the event of a dispute, Ooota will mediate between the customer and the restaurant but is not obligated to provide a refund or compensation without partner approval.</li>
-          <li>Refunds, when approved, will be processed back to the original mode of payment within a reasonable time frame.</li>
-        </ul>
+                <h2>7. DELIVERY PARTNER OBLIGATIONS</h2>
+                <ul>
+                    <li>Must provide and verify identity proof, address proof, valid driving license, and bank details.
+                    </li>
+                    <li>Adhere to road safety rules and regulations, and conduct deliveries with punctuality and
+                        professionalism.</li>
+                    <li>Accept delivery requests only when available and ensure order pickup and delivery within the
+                        estimated time.</li>
+                    <li>Maintain hygiene and cleanliness while handling food.</li>
+                    <li>Communicate politely with customers and restaurant staff.</li>
+                    <li>Report incidents or undeliverable orders to the support team immediately.</li>
+                    <li>Not engage in fraudulent behavior, manipulation of delivery status, or use of abusive language.
+                    </li>
+                    <li>Possession or use of alcohol, drugs, or weapons during deliveries will result in immediate
+                        termination and legal consequences.</li>
+                </ul>
 
-        <h2>10. PROMOTIONS, OFFERS & REWARD MISUSE</h2>
-        <ul>
-          <li>Promotional codes, credits, and discounts provided by Ootaa are non-transferable, may be limited to single use, and are intended solely for the account holder’s personal use.</li>
-          <li>Ootaa may withdraw or modify promotional offers at any time without prior notice.</li>
-          <li>Any form of misuse—including creating multiple accounts, using bots or scripts to automate redemptions, or engaging in fake referrals—will lead to cancellation of orders, reversal of benefits, and permanent account suspension.</li>
-          <li>Ootaa reserves the right to withhold or reclaim promotional benefits if it suspects or detects any form of abuse or manipulation.</li>
-        </ul>
+                <h2>8. DELIVERY & SERVICE LIMITATIONS</h2>
+                <ul>
+                    <li>Estimated delivery times are indicative. Delays may occur due to traffic, weather, or
+                        operational issues.</li>
+                    <li>Ooota is not liable for:
+                        <ul>
+                            <li>Delays caused by delivery partners.</li>
+                            <li>Food issues after pick-up (e.g., spillage, tampering).</li>
+                            <li>Incorrect/missing items (to be resolved with the restaurant).</li>
+                        </ul>
+                    </li>
+                </ul>
 
-        <h2>11. CONTENT GUIDELINES & USER CONDUCT</h2>
-        <p>You agree to the following guidelines while posting any content (reviews, comments, images, etc.) on the platform:</p>
-        <ul>
-          <li>Content must be truthful, respectful, and relevant to your experience.</li>
-          <li>You must not post content that:
-            <ul>
-              <li>Is false, misleading, or defamatory.</li>
-              <li>Contains hate speech, explicit or obscene material.</li>
-              <li>Is harassing, threatening, abusive, or incites violence.</li>
-              <li>Infringes on any intellectual property or privacy rights.</li>
-              <li>Promotes illegal or harmful activities.</li>
-            </ul>
-          </li>
-        </ul>
-        <p>Users must not use the platform to:</p>
-        <ul>
-          <li>Engage in fraudulent activities or identity theft.</li>
-          <li>Disrupt platform operations through malware, hacking, or DDoS attacks.</li>
-          <li>Attempt unauthorized access to internal systems or user data.</li>
-          <li>Harass or threaten restaurant staff, delivery partners, or Ootaa personnel.</li>
-        </ul>
-        <p>Violations of these content and conduct rules may result in content removal, account suspension, legal reporting, or permanent platform ban.</p>
+                <h2>9. REFUNDS & COMPENSATION</h2>
+                <h3>9.1 Eligible Refunds</h3>
+                <p>Refunds are applicable in cases such as:</p>
+                <ul>
+                    <li>Incorrect, missing, or incomplete items in the order.</li>
+                    <li>Spoiled, unsafe, or unfit food (verified and acknowledged by the restaurant partner).</li>
+                </ul>
+                <h3>9.2 Ineligible Refunds</h3>
+                <p>Refunds will not be issued for:</p>
+                <ul>
+                    <li>Delays in delivery due to traffic, weather, or operational reasons.</li>
+                    <li>Change of mind after placing the order.</li>
+                    <li>Taste preferences, portion size dissatisfaction, or subjective complaints.</li>
+                </ul>
+                <h3>9.3 Refund Authorization</h3>
+                <ul>
+                    <li>Ooota acts solely as a facilitator and does not independently process or authorize refunds.</li>
+                    <li>All refund approvals are subject to confirmation from the respective restaurant partner based on
+                        their evaluation.</li>
+                    <li>In the event of a dispute, Ooota will mediate between the customer and the restaurant but is not
+                        obligated to provide a refund or compensation without partner approval.</li>
+                    <li>Refunds, when approved, will be processed back to the original mode of payment within a
+                        reasonable time frame.</li>
+                </ul>
 
-        <h2>12. DATA PRIVACY & SECURITY</h2>
-        <ul>
-          <li>Personal data is collected, processed, and stored in accordance with Ootaa’s [Privacy Policy], which outlines the type of information collected, the purposes of processing, and user rights.</li>
-          <li>Information collected includes, but is not limited to, name, contact details, order history, payment method, device information, and location data.</li>
-          <li>Data is shared with restaurant partners and delivery partners solely for the purpose of fulfilling the user’s order. Information may also be disclosed to regulatory or enforcement authorities when legally required.</li>
-          <li>We implement reasonable technical and organizational safeguards to protect your data against unauthorized access, loss, or destruction, including encryption, access control, regular audits, and employee confidentiality agreements.</li>
-          <li>Users have the right to access, correct, delete, or restrict the processing of their personal information. Requests should be made through support channels.</li>
-          <li>Data retention: We retain personal data for 180 days after account deletion, unless required to retain it longer for legal, compliance, or fraud prevention purposes.</li>
-        </ul>
+                <h2>10. PROMOTIONS, OFFERS & REWARD MISUSE</h2>
+                <ul>
+                    <li>Promotional codes, credits, and discounts provided by Ootaa are non-transferable, may be limited
+                        to single use, and are intended solely for the account holder’s personal use.</li>
+                    <li>Ootaa may withdraw or modify promotional offers at any time without prior notice.</li>
+                    <li>Any form of misuse—including creating multiple accounts, using bots or scripts to automate
+                        redemptions, or engaging in fake referrals—will lead to cancellation of orders, reversal of
+                        benefits, and permanent account suspension.</li>
+                    <li>Ootaa reserves the right to withhold or reclaim promotional benefits if it suspects or detects
+                        any form of abuse or manipulation.</li>
+                </ul>
 
-        <h2>13. INTELLECTUAL PROPERTY</h2>
-        <ul>
-          <li>All intellectual property rights associated with the Ootaa platform—including but not limited to trademarks, logos, service marks, software, source code, UI/UX design, database, analytics tools, and content—are the exclusive property of Ootaa or its licensors.</li>
-          <li>No part of the platform may be copied, reproduced, distributed, modified, reverse-engineered, scraped, mined, or reused without prior written consent.</li>
-          <li>Any unauthorized use of our intellectual property, including imitating visual elements, using brand elements for promotional purposes, or creating derivative works based on the platform, will result in immediate legal action.</li>
-          <li>User-submitted content such as reviews and feedback remains the intellectual property of the user; however, by submitting it, the user grants Ootaa a perpetual, non-exclusive, royalty-free, transferable license to use, reproduce, distribute, display, and adapt the content across various channels including advertising.</li>
-        </ul>
+                <h2>11. CONTENT GUIDELINES & USER CONDUCT</h2>
+                <p>You agree to the following guidelines while posting any content (reviews, comments, images, etc.) on
+                    the platform:</p>
+                <ul>
+                    <li>Content must be truthful, respectful, and relevant to your experience.</li>
+                    <li>You must not post content that:
+                        <ul>
+                            <li>Is false, misleading, or defamatory.</li>
+                            <li>Contains hate speech, explicit or obscene material.</li>
+                            <li>Is harassing, threatening, abusive, or incites violence.</li>
+                            <li>Infringes on any intellectual property or privacy rights.</li>
+                            <li>Promotes illegal or harmful activities.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p>Users must not use the platform to:</p>
+                <ul>
+                    <li>Engage in fraudulent activities or identity theft.</li>
+                    <li>Disrupt platform operations through malware, hacking, or DDoS attacks.</li>
+                    <li>Attempt unauthorized access to internal systems or user data.</li>
+                    <li>Harass or threaten restaurant staff, delivery partners, or Ootaa personnel.</li>
+                </ul>
+                <p>Violations of these content and conduct rules may result in content removal, account suspension,
+                    legal reporting, or permanent platform ban.</p>
 
-        <h2>14. LIMITATION OF LIABILITY</h2>
-        <p>Ootaa is a facilitator and does not take responsibility for:</p>
-        <ul>
-          <li>The quality, hygiene, or safety of food products delivered by restaurants.</li>
-          <li>Delays in delivery caused by third-party logistics providers or unforeseen circumstances.</li>
-          <li>Any disputes or misunderstandings between customers and restaurant partners.</li>
-        </ul>
-        <p>To the maximum extent permitted by applicable law, Ootaa’s total liability for any claim related to a specific transaction is limited to the total value paid by the customer for that order.</p>
-        <p>In no case shall Ootaa be liable for indirect, incidental, or consequential damages arising from the use of the platform or services.</p>
+                <h2>12. DATA PRIVACY & SECURITY</h2>
+                <ul>
+                    <li>Personal data is collected, processed, and stored in accordance with Ootaa’s [Privacy Policy],
+                        which outlines the type of information collected, the purposes of processing, and user rights.
+                    </li>
+                    <li>Information collected includes, but is not limited to, name, contact details, order history,
+                        payment method, device information, and location data.</li>
+                    <li>Data is shared with restaurant partners and delivery partners solely for the purpose of
+                        fulfilling the user’s order. Information may also be disclosed to regulatory or enforcement
+                        authorities when legally required.</li>
+                    <li>We implement reasonable technical and organizational safeguards to protect your data against
+                        unauthorized access, loss, or destruction, including encryption, access control, regular audits,
+                        and employee confidentiality agreements.</li>
+                    <li>Users have the right to access, correct, delete, or restrict the processing of their personal
+                        information. Requests should be made through support channels.</li>
+                    <li>Data retention: We retain personal data for 180 days after account deletion, unless required to
+                        retain it longer for legal, compliance, or fraud prevention purposes.</li>
+                </ul>
 
-        <h2>15. TERMINATION & SUSPENSION</h2>
-        <p>Ootaa may suspend, restrict, or permanently terminate access to the platform if:</p>
-        <ul>
-          <li>You violate these Terms of Service or any applicable laws and regulations.</li>
-          <li>Your account is associated with fraudulent transactions, threats, or abusive conduct.</li>
-        </ul>
-        <p>In most cases, Ootaa will provide 24 hours' notice before account termination. However, in cases involving illegal activity, threats to safety, or serious breaches of terms, access may be terminated without prior notice.</p>
-        <p>Upon termination:</p>
-        <ul>
-          <li>Your access to the platform will be revoked.</li>
-          <li>Any pending orders may be cancelled at Ootaa’s discretion.</li>
-          <li>No refunds will be issued unless mandated by applicable law.</li>
-        </ul>
+                <h2>13. INTELLECTUAL PROPERTY</h2>
+                <ul>
+                    <li>All intellectual property rights associated with the Ootaa platform—including but not limited to
+                        trademarks, logos, service marks, software, source code, UI/UX design, database, analytics
+                        tools, and content—are the exclusive property of Ootaa or its licensors.</li>
+                    <li>No part of the platform may be copied, reproduced, distributed, modified, reverse-engineered,
+                        scraped, mined, or reused without prior written consent.</li>
+                    <li>Any unauthorized use of our intellectual property, including imitating visual elements, using
+                        brand elements for promotional purposes, or creating derivative works based on the platform,
+                        will result in immediate legal action.</li>
+                    <li>User-submitted content such as reviews and feedback remains the intellectual property of the
+                        user; however, by submitting it, the user grants Ootaa a perpetual, non-exclusive, royalty-free,
+                        transferable license to use, reproduce, distribute, display, and adapt the content across
+                        various channels including advertising.</li>
+                </ul>
 
-        <h2>16. GOVERNING LAW & DISPUTES</h2>
-        <ul>
-          <li>These Terms shall be governed by and construed in accordance with the laws of **India**.</li>
-          <li>Any disputes, controversies, or claims arising out of or in connection with this Agreement, including any question regarding its existence, validity, or termination, shall be first attempted to be resolved amicably through good-faith negotiation and mediation.</li>
-          <li>If the parties are unable to resolve the dispute through mediation within 30 days, such dispute shall be finally resolved by binding arbitration in accordance with the Arbitration and Conciliation Act, 1996. The arbitration proceedings shall be conducted by a sole arbitrator appointed mutually by the parties.</li>
-          <li>The seat and venue of arbitration shall be **Bengaluru, Karnataka**. The language of arbitration shall be English.</li>
-          <li>Subject to the above, the courts of **Bengaluru** shall have exclusive jurisdiction.</li>
-        </ul>
+                <h2>14. LIMITATION OF LIABILITY</h2>
+                <p>Ootaa is a facilitator and does not take responsibility for:</p>
+                <ul>
+                    <li>The quality, hygiene, or safety of food products delivered by restaurants.</li>
+                    <li>Delays in delivery caused by third-party logistics providers or unforeseen circumstances.</li>
+                    <li>Any disputes or misunderstandings between customers and restaurant partners.</li>
+                </ul>
+                <p>To the maximum extent permitted by applicable law, Ootaa’s total liability for any claim related to a
+                    specific transaction is limited to the total value paid by the customer for that order.</p>
+                <p>In no case shall Ootaa be liable for indirect, incidental, or consequential damages arising from the
+                    use of the platform or services.</p>
 
-        <h2>17. GRIEVANCE OFFICER (As per IT Rules 2023)</h2>
-        <div class="contact-info">
-            <p><strong>Name:</strong> [Designated Officer Name]</p>
-            <p><strong>Email:</strong> <a href="mailto:grievance@oota.com">grievance@oota.com</a></p>
-            <p><strong>Phone:</strong> [Customer Support Number]</p>
-            <p><strong>Address:</strong> [Registered Office Address]</p>
-        </div>
-        <p>We will respond within 15 days of receiving a complaint.</p>
+                <h2>15. TERMINATION & SUSPENSION</h2>
+                <p>Ootaa may suspend, restrict, or permanently terminate access to the platform if:</p>
+                <ul>
+                    <li>You violate these Terms of Service or any applicable laws and regulations.</li>
+                    <li>Your account is associated with fraudulent transactions, threats, or abusive conduct.</li>
+                </ul>
+                <p>In most cases, Ootaa will provide 24 hours' notice before account termination. However, in cases
+                    involving illegal activity, threats to safety, or serious breaches of terms, access may be
+                    terminated without prior notice.</p>
+                <p>Upon termination:</p>
+                <ul>
+                    <li>Your access to the platform will be revoked.</li>
+                    <li>Any pending orders may be cancelled at Ootaa’s discretion.</li>
+                    <li>No refunds will be issued unless mandated by applicable law.</li>
+                </ul>
 
-        <h2>18. UPDATES TO THESE TERMS</h2>
-        <p>Ooota may modify these Terms periodically. You will be notified via email or app alerts. Continued use after such updates implies acceptance.</p>
+                <h2>16. GOVERNING LAW & DISPUTES</h2>
+                <ul>
+                    <li>These Terms shall be governed by and construed in accordance with the laws of **India**.</li>
+                    <li>Any disputes, controversies, or claims arising out of or in connection with this Agreement,
+                        including any question regarding its existence, validity, or termination, shall be first
+                        attempted to be resolved amicably through good-faith negotiation and mediation.</li>
+                    <li>If the parties are unable to resolve the dispute through mediation within 30 days, such dispute
+                        shall be finally resolved by binding arbitration in accordance with the Arbitration and
+                        Conciliation Act, 1996. The arbitration proceedings shall be conducted by a sole arbitrator
+                        appointed mutually by the parties.</li>
+                    <li>The seat and venue of arbitration shall be **Bengaluru, Karnataka**. The language of arbitration
+                        shall be English.</li>
+                    <li>Subject to the above, the courts of **Bengaluru** shall have exclusive jurisdiction.</li>
+                </ul>
 
-        <h2>19. CONTACT US</h2>
-        <p>📧 <a href="mailto:support@oota.com">support@oota.com</a></p>
-        <p> 📧 <a href="mailto:support@oota.com">sapthami.foods@gmail.com</a></p>
-        <p>By accessing Ooota, you acknowledge that you have read, understood, and agree to these Terms.</p>
-      </section>
+                <h2>17. GRIEVANCE OFFICER (As per IT Rules 2023)</h2>
+                <div class="contact-info">
+                    <p>**Name:** [Designated Officer Name]</p>
+                    <p>**Email:** <a href="mailto:grievance@oota.com">grievance@oota.com</a></p>
+                    <p>**Phone:** [Customer Support Number]</p>
+                    <p>**Address:** [Registered Office Address]</p>
+                </div>
+                <p>We will respond within 15 days of receiving a complaint.</p>
 
-      <section id="pp">
-        <h1>Ooota Privacy Policy</h1>
-        <!-- <p><strong>Effective Date:</strong> [Insert Date]</p>
-        <p><strong>Last Updated:</strong> [Insert Date]</p> -->
-        <p>Ootaa ("we", "our", or "us") is committed to protecting the privacy and personal information of its users, including Customers, Restaurant Partners, and Delivery Partners. This Privacy Policy outlines how we collect, use, store, disclose, and protect your data in compliance with applicable Indian data protection laws, including the Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011.</p>
+                <h2>18. UPDATES TO THESE TERMS</h2>
+                <p>Ooota may modify these Terms periodically. You will be notified via email or app alerts. Continued
+                    use after such updates implies acceptance.</p>
 
-        <h2>1. Information We Collect</h2>
-        <ul>
-          <li><strong>Personal Information:</strong> Name, mobile number, email address, postal address, location, payment details, and order history.</li>
-          <li><strong>Device & Log Information:</strong> IP address, browser type, OS, access time, and referring URLs.</li>
-          <li><strong>Location Data:</strong> Collected via the app to enable location-based services.</li>
-          <li><strong>Cookies & Similar Technologies:</strong> Used to personalize content and store user preferences.</li>
-        </ul>
+                <h2>19. CONTACT US</h2>
+                <p>📧 <a href="mailto:support@oota.com">support@oota.com</a></p>
+                <p> 📧 <a href="mailto:support@oota.com">sapthami.foods@gmail.com</a></p>
+                <p>By accessing Ooota, you acknowledge that you have read, understood, and agree to these Terms.</p>
+            </section>
 
-        <h2>2. How We Use Your Information</h2>
-        <ul>
-          <li>To create and manage user accounts.</li>
-          <li>To facilitate food orders and deliveries.</li>
-          <li>For customer support and grievance redressal.</li>
-          <li>To improve platform services and provide relevant offers.</li>
-          <li>To comply with legal obligations.</li>
-        </ul>
+            <section id="pp">
+                <h1>Ooota Privacy Policy</h1>
+                <p>Ootaa ("we", "our", or "us") is committed to protecting the privacy and personal information of its
+                    users, including Customers, Restaurant Partners, and Delivery Partners. This Privacy Policy outlines
+                    how we collect, use, store, disclose, and protect your data in compliance with applicable Indian
+                    data protection laws, including the Information Technology (Reasonable Security Practices and
+                    Procedures and Sensitive Personal Data or Information) Rules, 2011.</p>
 
-        <h2>3. Sharing of Information</h2>
-        <ul>
-          <li><strong>With Restaurant Partners:</strong> To process and fulfill orders.</li>
-          <li><strong>With Delivery Partners:</strong> To deliver the ordered items.</li>
-          <li><strong>With Legal Authorities:</strong> Upon lawful request or to prevent fraud, misuse, or harm.</li>
-          <li><strong>With Service Providers:</strong> For payment processing, IT infrastructure, and marketing services.</li>
-        </ul>
+                <h2>1. Information We Collect</h2>
+                <ul>
+                    <li>**Personal Information:** Name, mobile number, email address, postal address, location, payment
+                        details, and order history.</li>
+                    <li>**Device & Log Information:** IP address, browser type, OS, access time, and referring URLs.
+                    </li>
+                    <li>**Location Data:** Collected via the app to enable location-based services.</li>
+                    <li>**Cookies & Similar Technologies:** Used to personalize content and store user preferences.</li>
+                </ul>
 
-        <h2>4. Data Retention</h2>
-        <p>We retain personal data for 180 days after account deletion or as required by law.</p>
+                <h2>2. How We Use Your Information</h2>
+                <ul>
+                    <li>To create and manage user accounts.</li>
+                    <li>To facilitate food orders and deliveries.</li>
+                    <li>For customer support and grievance redressal.</li>
+                    <li>To improve platform services and provide relevant offers.</li>
+                    <li>To comply with legal obligations.</li>
+                </ul>
 
-        <h2>5. Security Measures</h2>
-        <p>We implement reasonable physical, technical, and administrative safeguards to protect your data.</p>
+                <h2>3. Sharing of Information</h2>
+                <ul>
+                    <li>**With Restaurant Partners:** To process and fulfill orders.</li>
+                    <li>**With Delivery Partners:** To deliver the ordered items.</li>
+                    <li>**With Legal Authorities:** Upon lawful request or to prevent fraud, misuse, or harm.</li>
+                    <li>**With Service Providers:** For payment processing, IT infrastructure, and marketing services.
+                    </li>
+                </ul>
 
-        <h2>6. Your Rights</h2>
-        <ul>
-          <li>Access, update, or delete your information.</li>
-          <li>Withdraw consent for data processing (where applicable).</li>
-        </ul>
+                <h2>4. Data Retention</h2>
+                <p>We retain personal data for 180 days after account deletion or as required by law.</p>
 
-        <h2>7. Grievance Officer</h2>
-        <div class="contact-info">
-            <p><strong>Name:</strong> [Grievance Officer Name]</p>
-            <p><strong>Email:</strong> <a href="mailto:grievance@ootaa.com">grievance@ootaa.com</a></p>
-            <p><strong>Address:</strong> [Registered Address]</p>
-        </div>
-        <p>We aim to resolve complaints within 15 days.</p>
-      </section>
+                <h2>5. Security Measures</h2>
+                <p>We implement reasonable physical, technical, and administrative safeguards to protect your data.</p>
 
-      <section id="rpt">
-        <h1>Ooota Restaurant Partner Terms</h1>
-        <p><strong>Effective Date:</strong> [Insert Date]</p>
-        <p><strong>Last Updated:</strong> [Insert Date]</p>
-        <p>These Restaurant Partner Terms govern the relationship between Ootaa and the restaurant establishments listed on its platform.</p>
+                <h2>6. Your Rights</h2>
+                <ul>
+                    <li>Access, update, or delete your information.</li>
+                    <li>Withdraw consent for data processing (where applicable).</li>
+                </ul>
 
-        <h2>1. Partner Obligations</h2>
-        <ul>
-          <li>Maintain valid FSSAI license and comply with Food Safety and Standards Act, 2006.</li>
-          <li>Provide accurate menu, pricing, and availability information.</li>
-          <li>Maintain food quality, safety, packaging standards, and hygiene.</li>
-          <li>Promptly update stock availability and notify customers of unavailable items.</li>
-        </ul>
+                <h2>7. Grievance Officer</h2>
+                <div class="contact-info">
+                    <p>**Name:** [Grievance Officer Name]</p>
+                    <p>**Email:** <a href="mailto:grievance@ootaa.com">grievance@ootaa.com</a></p>
+                    <p>**Address:** [Registered Address]</p>
+                </div>
+                <p>We aim to resolve complaints within 15 days.</p>
+            </section>
 
-        <h2>2. Service Fees & Subscription</h2>
-        <ul>
-          <li>Ootaa charges a daily subscription fee post-trial (as outlined in the ToS).</li>
-          <li>Fees are deducted from earnings before payout.</li>
-        </ul>
+            <section id="rpt">
+                <h1>Ooota Restaurant Partner Terms</h1>
+                <p>**Effective Date:** [Insert Date]</p>
+                <p>**Last Updated:** [Insert Date]</p>
+                <p>These Restaurant Partner Terms govern the relationship between Ootaa and the restaurant
+                    establishments listed on its platform.</p>
 
-        <h2>3. Order Fulfillment</h2>
-        <ul>
-          <li>Accept or reject incoming orders within the platform timelines.</li>
-          <li>Ensure timely preparation and handover to delivery partners.</li>
-          <li>Resolve complaints related to incorrect, missing, or spoiled items.</li>
-        </ul>
+                <h2>1. Partner Obligations</h2>
+                <ul>
+                    <li>Maintain valid FSSAI license and comply with Food Safety and Standards Act, 2006.</li>
+                    <li>Provide accurate menu, pricing, and availability information.</li>
+                    <li>Maintain food quality, safety, packaging standards, and hygiene.</li>
+                    <li>Promptly update stock availability and notify customers of unavailable items.</li>
+                </ul>
 
-        <h2>4. Refunds & Compensation</h2>
-        <ul>
-          <li>Restaurants agree to review refund requests raised by customers.</li>
-          <li>Approved refunds shall be processed through the platform.</li>
-        </ul>
+                <h2>2. Service Fees & Subscription</h2>
+                <ul>
+                    <li>Ootaa charges a daily subscription fee post-trial (as outlined in the ToS).</li>
+                    <li>Fees are deducted from earnings before payout.</li>
+                </ul>
 
-        <h2>5. Data & Confidentiality</h2>
-        <ul>
-          <li>Restaurant data may be used to optimize platform performance.</li>
-          <li>Any customer data accessed must be handled confidentially and solely for order fulfillment.</li>
-        </ul>
+                <h2>3. Order Fulfillment</h2>
+                <ul>
+                    <li>Accept or reject incoming orders within the platform timelines.</li>
+                    <li>Ensure timely preparation and handover to delivery partners.</li>
+                    <li>Resolve complaints related to incorrect, missing, or spoiled items.</li>
+                </ul>
 
-        <h2>6. Termination</h2>
-        <p>Ootaa may suspend or terminate partnership for:</p>
-        <ul>
-          <li>Violation of applicable food and safety laws.</li>
-          <li>Poor hygiene or repeated customer complaints.</li>
-          <li>Non-payment of fees or fraudulent activities.</li>
-        </ul>
+                <h2>4. Refunds & Compensation</h2>
+                <ul>
+                    <li>Restaurants agree to review refund requests raised by customers.</li>
+                    <li>Approved refunds shall be processed through the platform.</li>
+                </ul>
 
-        <h2>7. Dispute Resolution</h2>
-        <p>All disputes shall be subject to arbitration in **Bengaluru, Karnataka**, under the Arbitration and Conciliation Act, 1996.</p>
-      </section>
+                <h2>5. Data & Confidentiality</h2>
+                <ul>
+                    <li>Restaurant data may be used to optimize platform performance.</li>
+                    <li>Any customer data accessed must be handled confidentially and solely for order fulfillment.</li>
+                </ul>
 
-    </main>
+                <h2>6. Termination</h2>
+                <p>Ootaa may suspend or terminate partnership for:</p>
+                <ul>
+                    <li>Violation of applicable food and safety laws.</li>
+                    <li>Poor hygiene or repeated customer complaints.</li>
+                    <li>Non-payment of fees or fraudulent activities.</li>
+                </ul>
 
-    <footer>
-      © Ooota — Zero commission delivery. All rights reserved.
-    </footer>
-  </div>
-  
+                <h2>7. Dispute Resolution</h2>
+                <p>All disputes shall be subject to arbitration in **Bengaluru, Karnataka**, under the Arbitration and
+                    Conciliation Act, 1996.</p>
+            </section>
+
+        </main>
+
+        <footer>
+            © Ooota — Zero commission delivery. All rights reserved.
+        </footer>
+    </div>
+
 </body>
 
 </html>
-
-
