@@ -51,15 +51,12 @@
             flex-wrap: wrap;
         }
 
-        /* --- NEW LOGO STYLES --- */
+        /* --- LOGO STYLES --- */
         .logo-img {
             height: 62px;
-            /* Set the height of your logo */
             width: auto;
             display: block;
         }
-
-        /* --- END NEW LOGO STYLES --- */
 
         nav ul {
             display: flex;
@@ -78,15 +75,13 @@
             color: var(--primary)
         }
 
-        /* Hamburger */
+        /* Hamburger and Drawer styles */
         .menu-toggle {
             display: none;
             font-size: 28px;
             cursor: pointer;
             margin-left: auto;
         }
-
-        /* Right-side drawer (mobile) */
         .drawer-overlay {
             display: none;
             position: fixed;
@@ -96,17 +91,14 @@
             opacity: 0;
             transition: opacity .25s ease;
         }
-
         .drawer-overlay.active {
             display: block;
             opacity: 1;
         }
-
         .nav-drawer {
             position: fixed;
             top: 0;
             right: -320px;
-            /* hidden offscreen */
             width: 320px;
             height: 100%;
             background: #fff;
@@ -116,15 +108,12 @@
             display: flex;
             flex-direction: column;
             padding: 84px 20px 20px;
-            /* 84px top to account for header */
             gap: 8px;
             overflow-y: auto;
         }
-
         .nav-drawer.active {
             right: 0;
         }
-
         .nav-drawer a {
             color: var(--dark);
             text-decoration: none;
@@ -133,12 +122,11 @@
             border-radius: 8px;
             display: block;
         }
-
         .nav-drawer a:hover {
             background: rgba(0, 0, 0, 0.04);
         }
 
-        /* Hero */
+        /* Hero styles */
         .hero {
             min-height: 92vh;
             display: flex;
@@ -151,14 +139,12 @@
             color: var(--light);
             padding: 40px 18px;
         }
-
         .hero-content {
             position: relative;
             z-index: 1;
             max-width: 820px;
             padding: 20px;
         }
-
         .hero h1 {
             font-family: 'Playfair Display', serif;
             font-size: 56px;
@@ -167,69 +153,12 @@
             letter-spacing: -0.6px;
             text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45)
         }
-
         .hero p {
             font-size: 18px;
             margin-bottom: 28px;
             line-height: 1.6;
             color: rgba(255, 255, 255, 0.95);
             text-shadow: 0 1px 6px rgba(0, 0, 0, 0.3)
-        }
-
-        .btn {
-            padding: 12px 22px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 700;
-            text-decoration: none;
-            margin: 6px;
-            display: inline-block;
-            text-align: center
-        }
-
-        .btn-primary {
-            background: var(--primary);
-            color: var(--light);
-            box-shadow: 0 8px 20px rgba(255, 107, 53, 0.18)
-        }
-
-        /* make secondary readable on dark hero */
-        .btn-secondary {
-            background: rgba(255, 255, 255, 0.08);
-            border: 2px solid rgba(255, 255, 255, 0.14);
-            color: var(--light)
-        }
-
-        /* hero buttons wrapper */
-        .hero-buttons {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            width: 100%;
-            max-width: 820px;
-            margin: auto;
-            gap: 16px;
-        }
-
-        .hero-buttons .btn {
-            flex: 1;
-            /* equal width */
-            text-align: center;
-            /* center text inside */
-        }
-
-        /* On mobile stack them */
-        @media (max-width: 600px) {
-            .hero-buttons {
-                flex-direction: column;
-                justify-content: center;
-                gap: 12px;
-            }
-
-            .hero-buttons .btn {
-                width: 100%;
-            }
         }
 
 
@@ -251,6 +180,7 @@
             font-size: 16px
         }
 
+        /* Grid Layout for Side-by-Side Content */
         .about,
         .vision {
             display: grid;
@@ -267,33 +197,22 @@
             display: block
         }
 
-        .card {
-            background: var(--light);
-            padding: 28px;
-            border-radius: 12px;
-            box-shadow: 0 8px 30px rgba(16, 24, 40, 0.06)
+        /* --- Alternating Layout (Mission Section) --- */
+        /* Since all HTML sections now have (Text) then (Image) in source order, 
+           we use the reverse-layout to swap them on DESKTOP only. */
+        .reverse-layout {
+            grid-template-areas: "image content";
         }
-
-        /* Gallery */
-        /* .gallery {
-            margin-top: 40px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 18px
+        .reverse-layout > :nth-child(1) { /* The text div (which is first in HTML now) */
+            grid-area: content;
         }
-
-        .gallery img {
-            width: 100%;
-            border-radius: 12px;
-            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-            transition: transform .4s ease
+        .reverse-layout > :nth-child(2) { /* The image div (which is second in HTML now) */
+            grid-area: image;
         }
+        /* Note: Vision section is NOT reverse-layout, so it will show (Text) then (Image) on desktop */
 
-        .gallery img:hover {
-            transform: scale(1.04)
-        } */
 
-        /* Apps & Contact */
+        /* Apps & Contact styles */
         .apps {
             display: flex;
             gap: 22px;
@@ -301,7 +220,6 @@
             justify-content: center;
             margin-top: 28px
         }
-
         .app-card {
             flex: 1;
             min-width: 240px;
@@ -312,26 +230,27 @@
             text-align: center;
             transition: transform 300ms ease
         }
-
+        .app-card a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
         .app-card img {
             max-width: 84px;
             margin-bottom: 12px
         }
-
         .app-card h3 {
             margin-bottom: 10px;
             color: var(--primary)
         }
-
         .app-card p {
             margin-bottom: 16px
         }
-
         .app-card:hover {
             transform: translateY(-6px)
         }
 
-        /* Footer */
+        /* Footer styles */
         footer {
             background: #0f1724;
             color: var(--light);
@@ -342,14 +261,13 @@
             align-items: center;
             border-top: 1px solid rgba(255, 255, 255, 0.02)
         }
-
         footer a {
             color: var(--secondary);
             text-decoration: none;
             margin-left: auto
         }
 
-        /* Scroll-reveal animation */
+        /* Scroll-reveal animation styles */
         .animate {
             opacity: 0;
             transform: translateY(26px);
@@ -384,16 +302,34 @@
             transition-delay: 340ms
         }
 
-        /* Responsive */
+
+        /* ======================================================== */
+        /* --- RESPONSIVE: Mobile View Layout Fixes --- */
+        /* ======================================================== */
         @media(max-width:900px) {
 
             .about,
             .vision {
-                grid-template-columns: 1fr
+                /* Forces the 1fr 1fr grid to become a single column. */
+                grid-template-columns: 1fr;
             }
 
+            /* Remove grid-area assignments on mobile so that the stacking order is solely dictated by the HTML source order (Text -> Image). */
+            .reverse-layout {
+                grid-template-areas: none;
+            }
+            .reverse-layout > :nth-child(1),
+            .reverse-layout > :nth-child(2) {
+                grid-area: unset;
+            }
+
+            /* Other mobile-specific adjustments */
             nav ul {
-                gap: 16px
+                display: none; /* Hide desktop nav */
+            }
+
+            .menu-toggle {
+                display: block; /* Show hamburger */
             }
 
             .hero h1 {
@@ -405,36 +341,22 @@
             body {
                 padding-top: 72px
             }
-
             header {
                 padding: 14px 18px;
                 flex-wrap: wrap;
                 justify-content: space-between
             }
-
             .logo-img {
                 height: 58px;
             }
-
-            /* Slightly smaller logo on mobile */
             .hero h1 {
                 font-size: 30px
             }
-
             section {
                 padding: 60px 18px
             }
-
-            /* hide horizontal nav, show hamburger */
-            nav ul {
-                display: none;
-            }
-
-            .menu-toggle {
-                display: block
-            }
         }
-
+        
         @media(prefers-reduced-motion:reduce) {
 
             .animate,
@@ -459,16 +381,13 @@
         <a href="#" class="logo-link">
             <img src="Logo.png" alt="Ooota Logo" class="logo-img">
         </a>
-
         <div class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-controls="nav-drawer"
             aria-expanded="false" role="button" tabindex="0">☰</div>
-
         <nav>
             <ul id="nav-links">
                 <li><a href="#about">About us</a></li>
                 <li><a href="#vision">Vision</a></li>
                 <li><a href="#mission">Mission</a></li>
-                <!-- <li><a href="#gallery">Gallery</a></li> -->
                 <li><a href="#apps">Apps</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
@@ -476,12 +395,10 @@
     </header>
 
     <div class="drawer-overlay" id="drawer-overlay" aria-hidden="true"></div>
-
     <nav class="nav-drawer" id="nav-drawer" aria-hidden="true" role="navigation">
         <a href="#about">About us</a>
         <a href="#vision">Vision</a>
         <a href="#mission">Mission</a>
-        <!-- <a href="#gallery">Gallery</a> -->
         <a href="#apps">Apps</a>
         <a href="#contact">Contact Us</a>
     </nav>
@@ -490,7 +407,6 @@
         <div class="hero-content animate slide-up stagger" data-animate-delay="80">
             <h1>Good Food = Good Mood</h1>
             <p>Enjoy food at restaurant prices delivered to your doorstep.</p>
-
         </div>
     </section>
 
@@ -507,17 +423,17 @@
     </section>
 
     <section id="vision" class="vision">
-        <div class="animate slide-left" data-animate-delay="240">
-            <img src="vision.jpeg" alt="Vision image">
-        </div>
         <div class="animate slide-right" data-animate-delay="320">
             <h2>Vision</h2>
             <p>To become India’s most trusted, zero-commission food delivery platform, empowering local eateries and
                 creating value for every customer.</p>
         </div>
+        <div class="animate slide-left" data-animate-delay="240">
+            <img src="vision.jpeg" alt="Vision image">
+        </div>
     </section>
 
-    <section id="mission" class="vision">
+    <section id="mission" class="vision reverse-layout">
         <div class="animate slide-left" data-animate-delay="400">
             <h2>Mission</h2>
             <p>To revolutionize food delivery with fairness, transparency, and trust, ensuring both restaurants and
@@ -585,23 +501,18 @@
         }
 
         menuToggle.addEventListener('click', toggleDrawer);
-        // keyboard support on hamburger (Enter / Space)
         menuToggle.addEventListener('keydown', (e) => {
             if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleDrawer(); }
         });
 
-        // close when clicking overlay
         drawerOverlay.addEventListener('click', closeDrawer);
 
-        // close when clicking any drawer link
         document.querySelectorAll('#nav-drawer a').forEach(a => {
             a.addEventListener('click', () => {
-                // small timeout if you want scroll-to behaviour before close (optional)
                 closeDrawer();
             });
         });
 
-        // close on Escape
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeDrawer();
         });
